@@ -1,0 +1,2 @@
+# abbosali
+teleram bot @AbbosaliBot
