@@ -37,6 +37,12 @@ public class MessageController {
         return messageService.createNewMessage(message);
     }
 
+    @PostMapping
+    @Operation(summary = "create new messages")
+    public List<Message> addNewMessages(@RequestBody List<String> messages) {
+        return messageService.createNeMessages(messages);
+    }
+
     @DeleteMapping("/{id}")
     @Operation(summary = "delete message by id")
     public void deleteMessageBy(@PathVariable Long id) {

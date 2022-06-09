@@ -35,6 +35,14 @@ public class MessageService {
         return repository.save(new Message(null, message));
     }
 
+    public List<Message> createNeMessages(List<String> messages) {
+        val list = messages.stream()
+                           .map(it -> new Message(null, it))
+                           .toList();
+
+        return repository.saveAll(list);
+    }
+
     public void deleteMessageBy(Long id) {
         repository.deleteById(id);
     }
