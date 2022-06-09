@@ -16,4 +16,4 @@ services:
     environment:
       - POSTGRES_PASSWORD=postgres
       - POSTGRES_USER=postgres
-      - POSTGRES_DB=dish_service
+      - POSTGRES_DB=abbosali
