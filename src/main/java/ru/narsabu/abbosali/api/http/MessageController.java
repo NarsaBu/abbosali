@@ -37,7 +37,7 @@ public class MessageController {
         return messageService.createNewMessage(message);
     }
 
-    @PostMapping
+    @PostMapping("/list")
     @Operation(summary = "create new messages")
     public List<Message> addNewMessages(@RequestBody List<String> messages) {
         return messageService.createNeMessages(messages);
